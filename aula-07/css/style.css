@@ -1,66 +1,70 @@
 body {
+    box-sizing: border-box;
     display: grid;
-    flex-wrap: wrap;
-    background-color: gray;
-    width: 100vw;
+    grid-template-rows: 120px 1fr 60px;
+    background-image: url(../imagens/cinema.png);
+    background-repeat: repeat;
+    background-size: 400px;
+    font-family: 'Segoe UI';
+    height: 100vh;
+    margin: 0;
+    padding: 10px;
 }
 
 header {
-    
     display: flex;
-    font-family: 'Segoe UI';
-    background-image: linear-gradient(to right, rgb(1, 148, 206), rgb(1, 148, 206));
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
-    margin: 15px;
+    background-image: linear-gradient(to right, dodgerblue, lightblue);
     border-radius: 15px;
-    background-image: href="../imagens/img_site.png";
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
 }
+
 main {
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-content: space-between;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
+
 footer{
     width: 100%;
     display: flex;
-    font-family: 'Segoe UI';
-    background-color: rgb(202, 169, 22);
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: end;
-    padding: 15px;
-    margin: 15px;
+    background-color: orange;
+    justify-content: center;
     border-radius: 15px;
 }
+
 .imagem{
     display: flex;
     box-sizing: border-box;
-    margin-left: 50px;
-    margin-top: 35px;
-    width: 350px;
-    height: 250px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
     background-color: white;
-    border-radius: 20px;
-    justify-content: space-around;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 25%;
+    height: 35%;
 }
+
 .imagem img {
-    max-width: 80%;
-    height: 80%;
+    width: 90%;
+    height: 90%;
     object-fit: cover;
-    align-self: center;
     border-radius: 15px;
 }
 
 .texto {
+    box-sizing: border-box;
     background-color: white;
-    display: flex;
-    flex-wrap: wrap;
-    border-radius: 10px ;
-    width: 350px;
-    height: 250px;
-    margin-top: 35px;
-
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 65%;
+    height: 35%;
+    padding: 10px;
 }
