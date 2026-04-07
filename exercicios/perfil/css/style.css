@@ -1,0 +1,24 @@
+* {
+    font-family: Arial;
+    background-color: antiquewhite;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+header {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 123, 0);
+}
+.projeto :nth-child(even){
+    background-color: rgb(255, 210, 165);
+    border: solid black;
+    padding: 5px;
+    margin: 5px;
+}
+.projeto :nth-child(odd) {
+    background-color: rgb(255, 253, 251);
+    border: solid black;
+    padding: 5px;
+    margin: 5px;
+}
