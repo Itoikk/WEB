@@ -1,17 +1,26 @@
+* {
+    box-sizing: border-box;
+}
 body {
     box-sizing: border-box;
     display: grid;
-    grid-template-rows: 120px 1fr 60px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 100px 1fr 50px;
     background-image: url(../imagens/cinema.png);
     background-repeat: repeat;
-    background-size: 400px;
+    background-size: 300px;
     font-family: 'Segoe UI';
     height: 100vh;
+    width: 100vw;
     margin: 0;
     padding: 10px;
+    gap: 10px;
+    
 }
 
 header {
+    grid-column: span 12;
+    grid-row: 1;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -19,37 +28,38 @@ header {
     background-image: linear-gradient(to right, dodgerblue, lightblue);
     border-radius: 15px;
     color: white;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 20px;
 }
 
 main {
-    height: 100%;
-    display: flex;
-    flex-flow: row wrap;
+    display: grid;
+    grid-column: span 12;
+    grid-template-columns: repeat(12, 1fr);
     gap: 20px;
-    justify-content: center;
-    align-items: center;
+    padding: 30px;
+
 }
 
 footer{
-    width: 100%;
+    grid-row: 4;
+    grid-column: span 12;
     display: flex;
     background-color: orange;
     justify-content: center;
     border-radius: 15px;
+    padding: 0;
 }
 
 .imagem{
     display: flex;
-    box-sizing: border-box;
     justify-content: center;
     align-items: center;
     border-radius: 15px;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),  0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    width: 25%;
-    height: 35%;
+    grid-column: span 4;
+    height: span 1;
+    padding: 10px;
 }
 
 .imagem img {
@@ -60,11 +70,10 @@ footer{
 }
 
 .texto {
-    box-sizing: border-box;
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),  0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    width: 65%;
-    height: 35%;
+    grid-column: span 8;
+    height: span 1;
     padding: 10px;
 }
