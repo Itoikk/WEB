@@ -67,8 +67,9 @@ footer{
     height: 90%;
     object-fit: cover;
     border-radius: 15px;
+    transition: transform 1s;
 }
-
+ 
 .texto {
     background-color: white;
     border-radius: 15px;
@@ -76,4 +77,8 @@ footer{
     grid-column: span 8;
     height: span 1;
     padding: 10px;
+}
+
+.imagem img:hover {
+    transform: scale(1.05);
 }
