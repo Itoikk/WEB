@@ -1,0 +1,64 @@
+Desenvolver um site de crítica de cinema denominado CineReview, com base no layout apresentado em sala de aula.
+
+O objetivo desta atividade é aplicar conceitos de HTML e CSS, com foco em CSS Grid (sistema de 12 colunas), responsividade, organização estrutural e boas práticas de desenvolvimento web.
+
+O site deve conter:
+  - Um cabeçalho fixo (header) no topo da página
+  - Um menu lateral (sidebar) posicionado abaixo do cabeçalho
+  - Uma área principal de conteúdo estruturada com CSS Grid (12 colunas)
+
+O layout deve ser construído utilizando um sistema de 12 colunas com CSS Grid.
+
+O cabeçalho precisa ser fixo no topo da tela e deve conter:
+ - Ícone e nome do site “CineReview”
+ - Botão de menu (para mobile)
+ - Botão de alternância de tema (claro/escuro)
+
+Menu Lateral (Sidebar)
+  - Deve ficar abaixo do cabeçalho
+  - Deve conter links de navegação:
+     - Início
+     - Filmes
+     - Avaliações
+     - Contato
+
+Mobile:
+   - Deve aparecer com animação lateral (slide)
+   - Deve possuir overlay escuro ao abrir
+   - Deve ser fechado ao clicar fora
+
+Implementar alternância entre:
+   - Tema claro
+   - Tema escuro
+
+Animações - Incluir animação no projeto (Obrigatório)
+
+Organização:
+
+/cine-review
+│── index.html
+│── sobre.html
+│── contato.html
+│
+├── /css
+│   └── style.css
+│
+├── /images
+│   └── (imagens do site)
+
+Entrega
+  - Compactar o projeto em .zip
+  - Enviar via Moodle
+  - O código deve ser 100% autoral
+
+
+Critérios de Avaliação
+  - Uso correto de CSS Grid (12 colunas)
+  - Responsividade (desktop e mobile) [tablet bônus]
+  - Organização do código
+  - Fidelidade ao layout proposto
+  - Funcionamento do menu e navegação 
+	- Mobile com o menu deslizante [bônus extra]
+  - Implementação do tema escuro
+  - Qualidade visual (design)
+  

@@ -1,0 +1,114 @@
+* {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+:root {
+    --corCard:white;
+    --corFundo:#f5f7fa;
+    --corTexto:black;
+    --corMenu:rgb(14, 16, 46);
+}
+#lua:checked ~ .corpo {
+    --corCard:rgb(59, 59, 59);
+    --corFundo:black;
+    --corTexto:white;
+    --corMenu:black;
+}
+
+input {
+    position: absolute;
+    top: 25px;
+    right: 15px;
+}
+.corpo {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 50px 1fr;
+    height: 100vh;
+    margin: 10;
+    padding: 10;
+    border-radius: 10px;
+    background-color: var(--corFundo);
+}
+
+
+header {
+    display: flex;
+    grid-column: span 12;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--corCard);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1),  0 6px 20px 0 rgba(0, 0, 0, 0.07);
+    color: var(--corTexto);
+}
+main {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 250px);
+    grid-column: span 11;
+    grid-row: span 1;
+    background-color: var(--corFundo);
+    gap: 10px;
+    padding: 10px;
+}
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    grid-column: span 1;
+    background-color: var(--corMenu);
+    color: white;
+    height: 100%;
+    padding: 10px;
+}
+.card {
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    background-color: var(--corCard);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    grid-column: span 6;
+    height: 200px;
+    padding: 15px;
+}
+.card .texto {
+    height: 100%;
+    padding: 10px;
+    color: var(--corTexto);
+}
+
+.card img {
+    width: 30%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 1s;
+}
+.card img:hover{
+    transform: scale(1.05);
+}
+.destaques {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 15px;
+    background-color: var(--corCard);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    grid-column: span 12;
+    height: 75px;
+    padding: 15px;
+    color: var(--corTexto);
+}
+
+.col-12 { grid-column: span 12; }
+
+/*tablet*/
+@media (min-width: 768px) {
+  .col-md-6 { grid-column: span 6; }
+}
+
+@media (min-width: 1024px) {
+  .col-lg-3 { grid-column: span 6; }
+}
+
+
