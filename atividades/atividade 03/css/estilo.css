@@ -1,0 +1,28 @@
+h1 {
+    color: black;
+    text-align: center;
+}
+a {
+    color: rgb(255, 2, 221);
+}
+p {
+    font-size: 10;
+    font-family: "Comic Sans MS", "Comic Sans";
+}
+footer {
+    vertical-align:center;
+    background-color: rgb(182, 117, 255);
+    border: 2px black;
+    border-style: solid;
+    border-radius: 10px;
+    width: 300;
+
+}
+body {
+    background-color: rgb(220, 183, 255);
+}
+img {
+    display: block;
+    margin: auto;
+    width: 20%;
+}
