@@ -16,6 +16,7 @@ main{
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     margin: 20px;
+    
 }
 .card {
     display: flex;
@@ -52,7 +53,5 @@ main{
 }
 
 #card-3:hover {
-/*                      ( x  ,   y  )*/
     transform: translate(30px, -20px);
 }
-

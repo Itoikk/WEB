@@ -1,0 +1,43 @@
+:root {
+    --corf:rgb(255, 209, 209);
+    --corfu:white;
+    --corl:black;
+}
+
+#menu:checked ~ .corpo {
+    --corf:#8f0000;
+    --corl:rgb(255, 255, 255);
+    --corfu: black;
+}
+
+.corpo {
+    display: grid;
+    background-color: var(--corfu);
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 50px 1fr 50px;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    color: var(--corl);
+}
+
+header {
+    display: flex;
+    background-color: var(--corf);
+    grid-column: span 12;
+    height: span 1;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background-color: var(--corf);
+    grid-column: span 12;
+    height: span 1;
+    bottom: 0;
+}
+input {
+    position: absolute;
+    top: 25px;
+    left: 15px;
+}
